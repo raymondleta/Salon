@@ -1,10 +1,17 @@
 <h1>Client list!</h1>
-#if ($client)
-<p>Current client:</p>
-<p>Name: $client.getName()</p>
-<p>PhoneNumber: $client.getPhoneNumber()</p>
-<p>Service:  $client.getService()</p>
 
+#if ($clients)
+<ol>
+    #foreach ($client in $clients)
+    <li>
+    Name: $client.getName()
+    Phone Number: $client.getPhoneNumber()
+    Service: $client.getService()
+    Date: $client.getDate()
+    </li>
+
+    #end
+</ol>
 #else
-<p>No clients!</p>
+<p>No tasks!</p>
 #end

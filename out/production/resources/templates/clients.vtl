@@ -1,2 +1,15 @@
+<h1>Client list!</h1>
 
+#if ($clients)
+<ul>
+    #foreach ($client in $clients)
+    <li>$client.getName()</li>
+    <li>$client.getPhoneNumber()</li>
+    <li>$client.getService()</li>
+    <li>$client.getDate()</li>
 
+    #end
+</ul>
+#else
+<p>No tasks!</p>
+#end
