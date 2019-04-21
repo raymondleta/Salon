@@ -4,6 +4,7 @@
 package Salon;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.ArrayList;
 
 import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
@@ -17,8 +18,33 @@ public class App {
 
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
+
             model.put("template", "templates/index.vtl");
             return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
+        post("/clients", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+
+            String name =request.queryParams("name");
+            String phoneNumber = request.queryParams("phoneNumber");
+            String service = request.queryParams("service");
+
+            Client newClient = new Client(name, phoneNumber, service);
+            request.session().attribute("client", newClient);
+
+            model.put("client", request.session().attribute("client"));
+            model.put("template", "templates/clients.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
+        get("/clients", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+
+            model.put("client", request.session().attribute("client"));
+            model.put("template", "templates/clients.vtl");
+            return new ModelAndView(model, layout);
+
         }, new VelocityTemplateEngine());
 
     }

@@ -1,0 +1,10 @@
+<h1>Client list!</h1>
+#if ($client)
+<p>Current client:</p>
+<p>Name: $client.getName()</p>
+<p>PhoneNumber: $client.getPhoneNumber()</p>
+<p>Service:  $client.getService()</p>
+
+#else
+<p>No clients!</p>
+#end
