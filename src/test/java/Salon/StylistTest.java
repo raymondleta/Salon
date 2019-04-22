@@ -1,8 +1,14 @@
 package Salon;
 import org.junit.*;
 import static org.junit.Assert.*;
+import org.sql2o.*;
 
 public class StylistTest {
+
+    @Before
+    public void setUp() {
+        DB.sql2o = new Sql2o("jdbc:postgresql://localhost:5432/hair_salon_test", "owner", "12345");
+    }
 
     @Test
     public void category_instantiatesCorrectly_true() {

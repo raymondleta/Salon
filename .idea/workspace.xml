@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9540acde-b8e6-4a90-93a1-d0641edfec8a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Salon/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Salon/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Salon/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Salon/ClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Salon/StylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Salon/StylistTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -40,14 +42,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Salon/Stylist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="45" column="40" lean-forward="true" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+            <state relative-caret-position="437">
+              <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#518#519#0" expanded="true" />
+                <element signature="e#545#546#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+                <element signature="e#617#618#0" expanded="true" />
+                <element signature="e#657#658#0" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
+                <element signature="e#722#723#0" expanded="true" />
+                <element signature="e#755#756#0" expanded="true" />
+                <element signature="e#780#781#0" expanded="true" />
+                <element signature="e#805#806#0" expanded="true" />
                 <element signature="e#929#930#0" expanded="true" />
                 <element signature="e#959#960#0" expanded="true" />
-                <element signature="e#1002#1003#0" expanded="true" />
-                <element signature="e#1037#1038#0" expanded="true" />
+                <element signature="e#1112#1113#0" expanded="true" />
+                <element signature="e#1147#1148#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,13 +74,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Salon/StylistTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="63" column="46" lean-forward="true" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
+            <state relative-caret-position="207">
+              <caret line="9" column="96" selection-start-line="9" selection-start-column="96" selection-end-line="9" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#154#155#0" expanded="true" />
+                <element signature="e#249#250#0" expanded="true" />
                 <element signature="e#2329#2330#0" expanded="true" />
                 <element signature="e#2383#2384#0" expanded="true" />
               </folding>
@@ -97,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Salon/ClientTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1045">
-              <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="7" />
+            <state relative-caret-position="2052">
+              <caret line="108" lean-forward="true" selection-start-line="63" selection-end-line="108" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#154#155#0" expanded="true" />
@@ -108,23 +122,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Salon/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="902">
-              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+            <state relative-caret-position="318">
+              <caret line="77" column="26" lean-forward="true" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#613#614#0" expanded="true" />
-                <element signature="e#651#652#0" expanded="true" />
-                <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#749#750#0" expanded="true" />
-                <element signature="e#779#780#0" expanded="true" />
-                <element signature="e#806#807#0" expanded="true" />
-                <element signature="e#968#969#0" expanded="true" />
-                <element signature="e#993#994#0" expanded="true" />
+                <element signature="e#1881#1882#0" expanded="true" />
+                <element signature="e#1953#1954#0" expanded="true" />
+                <element signature="e#2017#2018#0" expanded="true" />
+                <element signature="e#2074#2075#0" expanded="true" />
+                <element signature="e#2124#2125#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -176,12 +185,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/stylist-clients-form.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.vtl" />
         <option value="$PROJECT_DIR$/src/main/java/Salon/App.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Salon/StylistTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Salon/Stylist.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/stylist.vtl" />
         <option value="$PROJECT_DIR$/src/main/java/Salon/DB.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Salon/ClientTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Salon/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Salon/Stylist.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Salon/ClientTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Salon/StylistTest.java" />
       </list>
     </option>
   </component>
@@ -292,7 +301,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StylistTest">
+  <component name="RunManager" selected="JUnit.ClientTest">
     <configuration name="ClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Salon.test" />
       <extension name="coverage">
@@ -325,8 +334,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StylistTest" />
         <item itemvalue="JUnit.ClientTest" />
+        <item itemvalue="JUnit.StylistTest" />
       </list>
     </recent_temporary>
   </component>
@@ -344,12 +353,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StylistTest - 2019.04.22 at 00h 27m 41s.xml">
-      <configuration name="StylistTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StylistTest - 2019.04.22 at 00h 29m 23s.xml">
-      <configuration name="StylistTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StylistTest - 2019.04.22 at 00h 36m 35s.xml">
       <configuration name="StylistTest" configurationId="JUnit" />
     </history-entry>
@@ -374,6 +377,12 @@
     <history-entry file="StylistTest - 2019.04.22 at 16h 05m 26s.xml">
       <configuration name="StylistTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ClientTest - 2019.04.22 at 18h 10m 19s.xml">
+      <configuration name="ClientTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClientTest - 2019.04.22 at 18h 18m 09s.xml">
+      <configuration name="ClientTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -388,7 +397,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -402,7 +411,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29638556" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.29638556" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.19036144" />
@@ -530,18 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Salon/StylistTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="63" column="46" lean-forward="true" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2329#2330#0" expanded="true" />
-            <element signature="e#2383#2384#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/stylist.vtl">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -565,22 +562,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Salon/Stylist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="45" column="40" lean-forward="true" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+        <state relative-caret-position="437">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
             <element signature="e#929#930#0" expanded="true" />
             <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#1002#1003#0" expanded="true" />
-            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1147#1148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Salon/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="77" column="26" lean-forward="true" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1881#1882#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="e#2017#2018#0" expanded="true" />
+            <element signature="e#2074#2075#0" expanded="true" />
+            <element signature="e#2124#2125#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Salon/ClientTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="7" />
+        <state relative-caret-position="2052">
+          <caret line="108" lean-forward="true" selection-start-line="63" selection-end-line="108" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#154#155#0" expanded="true" />
@@ -589,22 +611,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Salon/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Salon/StylistTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+        <state relative-caret-position="207">
+          <caret line="9" column="96" selection-start-line="9" selection-start-column="96" selection-end-line="9" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#993#994#0" expanded="true" />
+            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#2329#2330#0" expanded="true" />
+            <element signature="e#2383#2384#0" expanded="true" />
           </folding>
         </state>
       </provider>
