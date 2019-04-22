@@ -59,4 +59,8 @@ public class StylistTest {
         testStylist.addClient(testClient);
         assertTrue(testStylist.getClients().contains(testClient));
     }
+    @Test
+    public void find_returnsNullWhenNoTaskFound_null() {
+        assertTrue(Stylist.find(999) == null);
+    }
 }

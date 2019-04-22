@@ -20,6 +20,7 @@ public class Client {
         id = instances.size();
 
     }
+    
 
     public String getName() {
         return name;
