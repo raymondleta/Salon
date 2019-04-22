@@ -1,12 +1,28 @@
-<h1>$stylist.getName()</h1>
+<!--<h1>$stylist.getName()</h1>-->
 
+<!--<ul>-->
+<!--    #foreach($client in $stylist.getClients())-->
+<!--    <li>Name: $client.getName()-->
+<!--    <li>Phone Number: $client.getPhoneNumber()</li>-->
+<!--    <li>Service: $client.getService()</li>-->
+<!--    #end-->
+<!--</ul>-->
+
+<!--<a href="/stylists/$stylist.getId()/clients/new">Add a new client</a>-->
+<!--<a href="/stylists">All Stylists</a>-->
+
+#if ($stylist)
+<h1>$stylist.getName() clients:</h1>
 <ul>
     #foreach($client in $stylist.getClients())
-    <li>Name: $client.getName()
-    <li>Phone Number: $client.getPhoneNumber()</li>
-    <li>Service: $client.getService()</li>
+    <li>$client.getName()</li>
+    <li>$client.getPhoneNumber()</li>
+    <li>$client.getService()</li>
     #end
 </ul>
+#else
+<em><p>Oops! We can't seem to find that Stylist.</p></em>
+#end
 
 <a href="/stylists/$stylist.getId()/clients/new">Add a new client</a>
 <a href="/stylists">All Stylists</a>

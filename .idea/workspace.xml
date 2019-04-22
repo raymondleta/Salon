@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9540acde-b8e6-4a90-93a1-d0641edfec8a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Salon/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Salon/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Salon/Stylist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Salon/Stylist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.vtl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/stylist.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/stylist.vtl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Salon/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Salon/ClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Salon/StylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Salon/StylistTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="9540acde-b8e6-4a90-93a1-d0641edfec8a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -63,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/stylist.vtl">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -95,7 +87,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/clients.vtl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -351,9 +343,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StylistTest - 2019.04.22 at 00h 22m 51s.xml">
-      <configuration name="StylistTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StylistTest - 2019.04.22 at 00h 23m 02s.xml">
       <configuration name="StylistTest" configurationId="JUnit" />
     </history-entry>
@@ -379,6 +368,9 @@
       <configuration name="StylistTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="StylistTest - 2019.04.22 at 12h 44m 06s.xml">
+      <configuration name="StylistTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StylistTest - 2019.04.22 at 14h 59m 58s.xml">
       <configuration name="StylistTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -512,13 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/clients.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/stylists.vtl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -607,6 +592,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-start-column="4" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/clients.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
