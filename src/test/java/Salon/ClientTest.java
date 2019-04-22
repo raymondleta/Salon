@@ -2,8 +2,22 @@ package Salon;
 
 import org.junit.*;
 import static org.junit.Assert.*;
+import org.sql2o.*;
 
 public class ClientTest {
+
+    @Before
+    public void setUp() {
+        DB.sql2o = new Sql2o("jdbc:postgresql://localhost:5432/hair_salon_test", "owner", "12345");
+    }
+
+    @After
+    public void tearDown() {
+        try(Connection con = DB.sql2o.open()) {
+            String sql = "DELETE FROM clients *;";
+            con.createQuery(sql).executeUpdate();
+        }
+    }
     @Test
     public void Client_instantiatesCorrectly_true() {
         Client myClient = new Client("Raymond Gitonga", "0729000000", "Salon", "01/12/2019");
@@ -36,10 +50,10 @@ public class ClientTest {
         assertEquals(true, Client.all().contains(firstClient));
         assertEquals(true, Client.all().contains(secondClient));
     }
-    @After
-    public void tearDown() {
-        Client.clear();
-    }
+//    @After
+//    public void tearDown() {
+//        Client.clear();
+//    }
 
     @Test
     public void getId_clientsInstantiateWithAnID_1() {
