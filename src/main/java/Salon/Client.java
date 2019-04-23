@@ -54,6 +54,18 @@ public class Client {
                     .getKey();
         }
     }
+    public void update(String name, String phoneNumber, String service, String date) {
+        try(Connection con = DB.sql2o.open()) {
+            String sql = "UPDATE clients SET name = :name, phoneNumber = :phoneNumber, service = :service, date = :date WHERE id = :id";
+            con.createQuery(sql)
+                    .addParameter("name", name)
+                    .addParameter("phoneNumber", phoneNumber)
+                    .addParameter("service", service)
+                    .addParameter("date", date)
+                    .addParameter("id", id)
+                    .executeUpdate();
+        }
+    }
 
 
     public String getName() {

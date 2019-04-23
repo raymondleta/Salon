@@ -72,52 +72,13 @@ public class ClientTest {
         Client savedClient = Client.find(myClient.getId());
         assertEquals(savedClient.getStylistId(), myStylist.getId());
     }
-
-//    @Test
-//    public void Client_instantiatesCorrectly_true() {
-//        Client myClient = new Client("Raymond Gitonga", "0729000000", "Salon", "01/12/2019");
-//        assertEquals(true, myClient instanceof Client);
-//    }
-//    @Test
-//    public void Client_instantiatesWithName_String() {
-//        Client myClient = new Client("DM","1234","Salon", "01/12/2019");
-//        assertEquals("DM", myClient.getName());
-//    }
-//    @Test
-//    public void Client_instantiatesWithNumber_String() {
-//        Client myClient = new Client("DM","1234","Salon", "01/12/2019");
-//        assertEquals("1234", myClient.getPhoneNumber());
-//    }
-//    @Test
-//    public void Client_instantiatesWithService_String() {
-//        Client myClient = new Client("DM","1234","Salon", "01/12/2019");
-//        assertEquals("Salon", myClient.getService());
-//    }
-//    @Test
-//    public void Client_instantiatesWithDate_String() {
-//        Client myClient = new Client("DM","1234","Salon", "01/12/2019");
-//        assertEquals("01/12/2019", myClient.getDate());
-//    }
-//    @Test
-//    public void all_returnsAllInstancesOfClient_true() {
-//        Client firstClient = new Client("Tosh","4567","Kinyozi", "1/1/1111");
-//        Client secondClient = new Client("Gitonga", "4568","Salon","12/1/1990");
-//        assertEquals(true, Client.all().contains(firstClient));
-//        assertEquals(true, Client.all().contains(secondClient));
-//    }
-//
-//    @Test
-//    public void getId_clientsInstantiateWithAnID_1() {
-//        Client myClient = new Client("Tosh","4567","Kinyozi", "1/1/1111");
-//        assertEquals(1, myClient.getId());
-//    }
-//    @Test
-//    public void find_returnsClientWithSameId_secondTask() {
-//
-//        Client firstCLient = new Client("Tosh","4567","Kinyozi", "1/1/1111");
-//        Client secondClient = new Client("MP","1234","Salon", "12/12/2010");
-//        assertEquals(Client.find(secondClient.getId()), secondClient);
-//    }
+    @Test
+    public void update_updatesClientDescription_true() {
+        Client myClient = new Client("Tosh", "5555","Salon","12/11/1111", 1);
+        myClient.save();
+        myClient.update("Tooti", "2222","Kinyozi","12/12/1222");
+        assertEquals("Tooti", Client.find(myClient.getId()).getName());
+    }
 
 
 }
