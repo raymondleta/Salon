@@ -1,21 +1,66 @@
 package Salon;
 import java.util.List;
 import java.util.ArrayList;
+import org.sql2o.*;
 
 public class Stylist {
     private String name;
     private String phoneNumber;
-    private static List<Stylist> instances = new ArrayList<>();
     private int id;
     private List<Client> clients;
 
     public Stylist(String name, String phoneNumber) {
         this.name = name;
         this.phoneNumber = phoneNumber;
-        instances.add(this);
-        id = instances.size();
         clients = new ArrayList<>();
     }
+    public static List<Stylist> all() {
+        String sql = "SELECT id, name, phoneNumber FROM stylists";
+        try(Connection con = DB.sql2o.open()) {
+            return con.createQuery(sql).executeAndFetch(Stylist.class);
+        }
+    }
+    @Override
+    public boolean equals(Object otherStylist) {
+        if (!(otherStylist instanceof Stylist)) {
+            return false;
+        } else {
+            Stylist newStylist = (Stylist) otherStylist;
+            return this.getName().equals(newStylist.getName()) &&
+                    this.getId() == newStylist.getId() &&
+                    this.getPhoneNumber().equals(newStylist.getPhoneNumber());
+        }
+    }
+    public void save() {
+        try(Connection con = DB.sql2o.open()) {
+            String sql = "INSERT INTO stylists (name, phoneNumber) VALUES (:name, :phoneNumber)";
+            this.id = (int) con.createQuery(sql, true)
+                    .addParameter("name", this.name)
+                    .addParameter("phoneNumber", this.phoneNumber)
+                    .executeUpdate()
+                    .getKey();
+        }
+    }
+    public static Stylist find(int id) {
+        try(Connection con = DB.sql2o.open()) {
+            String sql = "SELECT * FROM stylists where id=:id";
+            Stylist stylist = con.createQuery(sql)
+                    .addParameter("id", id)
+                    .executeAndFetchFirst(Stylist.class);
+            return stylist;
+        }
+    }
+    public List<Client> getClients() {
+        try(Connection con = DB.sql2o.open()) {
+            String sql = "SELECT * FROM clients where stylistId=:id";
+            return con.createQuery(sql)
+                    .addParameter("id", this.id)
+                    .executeAndFetch(Client.class);
+        }
+    }
+
+
+
 
     public String getName() {
         return name;
@@ -24,25 +69,11 @@ public class Stylist {
     public String getPhoneNumber() {
         return phoneNumber;
     }
-    public static List<Stylist> all() {
-        return instances;
-    }
-    public static void clear() {
-        instances.clear();
-    }
     public int getId() {
         return id;
     }
-    public static Stylist find(int id) {
-        try {
-            return instances.get(id - 1);
-        } catch (IndexOutOfBoundsException exception) {
-            return null;
-        }
-    }
-    public List<Client> getClients() {
-        return clients;
-    }
+
+
     public void addClient(Client client) {
         clients.add(client);
     }
