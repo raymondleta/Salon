@@ -88,6 +88,7 @@ public class Client {
     public int getStylistId() {
         return stylistId;
     }
+
     public static Client find(int id) {
         try(Connection con = DB.sql2o.open()) {
             String sql = "SELECT * FROM clients where id=:id";
@@ -95,6 +96,15 @@ public class Client {
                     .addParameter("id", id)
                     .executeAndFetchFirst(Client.class);
             return client;
+        }
+    }
+
+    public void delete() {
+        try(Connection con = DB.sql2o.open()) {
+            String sql = "DELETE FROM clients WHERE id = :id;";
+            con.createQuery(sql)
+                    .addParameter("id", id)
+                    .executeUpdate();
         }
     }
 

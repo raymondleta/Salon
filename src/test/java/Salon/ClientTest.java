@@ -79,6 +79,14 @@ public class ClientTest {
         myClient.update("Tooti", "2222","Kinyozi","12/12/1222");
         assertEquals("Tooti", Client.find(myClient.getId()).getName());
     }
+    @Test
+    public void delete_deletesTask_true() {
+        Client myClient = new Client("Tosh", "12345","Salon","12/12/2010", 1);
+        myClient.save();
+        int myClientId = myClient.getId();
+        myClient.delete();
+        assertEquals(null, Client.find(myClientId));
+    }
 
 
 }
