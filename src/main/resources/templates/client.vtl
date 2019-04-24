@@ -1,12 +1,12 @@
 <div class="well5">
-<h1>$client.getName()</h1>
+<h3>$client.getName()</h3>
 
-<h2>Delete Client:</h2>
+<h3>Delete Client:</h3>
 <form action="/stylists/$client.getStylistId()/clients/$client.getId()/delete" method="post">
     <button type="submit" class="btn btn-danger" id="delete-task">Delete Client</button>
 </form>
 
-<h2>Edit Client:</h2>
+<h3>Edit Client:</h3>
 
 <form action="/stylists/$client.getStylistId()/clients/$client.getId()" method="post">
     <input id="stylistId" name="stylistId" type="hidden" value="$stylist.getId()">
