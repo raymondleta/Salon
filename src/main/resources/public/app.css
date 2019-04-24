@@ -1,5 +1,8 @@
 body{
     background-image: url("https://www.fortgarryhotel.com/wp-content/uploads/2018/05/Spa-Banner.jpg");
+    font-family: 'Berkshire Swash', cursive;
+    color: white;
+    font-size: 20px;
 
 }
 .well1{
@@ -9,14 +12,55 @@ body{
     background: white;
     float: left;
     text-align: center;
-    font-family: 'Aclonica', sans-serif;
-     background: #FDD9EB;
+    background-image: url("https://blog.zydii.com/wp-content/uploads/2017/03/tumblr_static_zaruta-2.jpg");
 }
 button{
     margin-top: 50px;
     width: 150px;
-    height: 30px;
-    border-radius: 40px;
+    height: 60px;
+    border-radius: 20px;
+}
 
+.well2{
+    box-sizing: border-box;
+    width: 50%;
+    height: 700px;
+    background: white;
+    float: left;
+    text-align: center;
+    background-image: url("https://blog.zydii.com/wp-content/uploads/2017/03/tumblr_static_zaruta-2.jpg");
+}
+.well3{
+      box-sizing: border-box;
+      width: 50%;
+      height: 400px;
+      background: white;
+      float: left;
+      text-align: center;
+      background-image: url("https://blog.zydii.com/wp-content/uploads/2017/03/tumblr_static_zaruta-2.jpg");
+}
+.well4{
+      box-sizing: border-box;
+      width: 50%;
+      height: 600px;
+      background: white;
+      float: left;
+      text-align: center;
+      background-image: url("https://blog.zydii.com/wp-content/uploads/2017/03/tumblr_static_zaruta-2.jpg");
+}
+.well5{
+      box-sizing: border-box;
+      width: 50%;
+      height: 690px;
+      background: white;
+      float: left;
+      text-align: center;
+     background-image: url("https://blog.zydii.com/wp-content/uploads/2017/03/tumblr_static_zaruta-2.jpg");
+}
 
+.inputName{
+    float: left;
+}
+.inputNumber{
+    float: left;
 }

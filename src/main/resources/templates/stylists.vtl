@@ -1,13 +1,17 @@
+<div class="well2">
 <h1>All Stylists</h1>
 
 #foreach ($stylist in $stylists)
 $stylist.getId()
-Name: $stylist.getName()
-Contacts: $stylist.getPhoneNumber()
+    <strong>Name:</strong> $stylist.getName()
+    <br>
+    <strong>Contacts:</strong> $stylist.getPhoneNumber()
 <br>
 <a href="/stylists/$stylist.getId()">View Clients</a>
 <br>
 
 #end
+    <br><br>
 
-<a href="/stylists/new">Add New Stylist</a>
+<button><a href="/stylists/new">Add New Stylist</a></button>
+</div>

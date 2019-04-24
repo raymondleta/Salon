@@ -1,12 +1,17 @@
+<div class="well3">
 #if ($stylist)
 <h1>$stylist.getName() clients:</h1>
 
 #foreach($client in $stylist.getClients())
 $client.getId()
 Name:  $client.getName()
+    <br>
 Contacts: $client.getPhoneNumber()
+    <br>
 Service: $client.getService()
+    <br>
 Appointment Date: $client.getDate()
+    <br>
 <a href="/stylists/$stylist.getId()/clients/$client.getId()">Details</a>
 <br>
 #end
@@ -17,3 +22,4 @@ Appointment Date: $client.getDate()
 
 <a href="/stylists/$stylist.getId()/clients/new">Add a new client</a>
 <a href="/stylists">All Stylists</a>
+</div>
