@@ -79,40 +79,11 @@ public class StylistTest {
         Client[] tasks = new Client[] { firstClient, secondClient };
         assertTrue(myStylist.getClients().containsAll(Arrays.asList(tasks)));
     }
-//    @Test
-//    public void clear_emptiesAllStylistsFromList_0() {
-//        Stylist testStylist = new Stylist("Tosh", "1234");
-//        Stylist.clear();
-//        assertEquals(Stylist.all().size(), 0);
-//    }
-//    @Test
-//    public void getId_stylistsInstantiateWithAnId_1() {
-//        Stylist.clear();
-//        Stylist testStylist = new Stylist("Tosh", "1234");
-//        assertEquals(1, testStylist.getId());
-//    }
-//    @Test
-//    public void find_returnsStylistWithSameId_secondStylist() {
-//        Stylist.clear();
-//        Stylist firstStylist = new Stylist("Tosh", "1234");
-//        Stylist secondStylist = new Stylist("Gitonga", "4567");
-//        assertEquals(Stylist.find(secondStylist.getId()), secondStylist);
-//    }
-//    @Test
-//    public void getClients_initiallyReturnsEmptyList_ArrayList() {
-//        Stylist.clear();
-//        Stylist testCategory = new Stylist("Tosh","1234");
-//        assertEquals(0, testCategory.getClients().size());
-//    }
-//    @Test
-//    public void addClient_addsClientToList_true() {
-//        Stylist testStylist = new Stylist("John","1234");
-//        Client testClient = new Client("Amos","3456","Kinyozi","12/1/1234");
-//        testStylist.addClient(testClient);
-//        assertTrue(testStylist.getClients().contains(testClient));
-//    }
-//    @Test
-//    public void find_returnsNullWhenNoTaskFound_null() {
-//        assertTrue(Stylist.find(999) == null);
-//    }
+    @Test
+    public void update_updatesStylistDetails_true() {
+        Stylist myStylist = new Stylist("John", "12345");
+        myStylist.save();
+        myStylist.update("Peter","12345");
+        assertEquals("Peter", Stylist.find(myStylist.getId()).getName());
+    }
 }

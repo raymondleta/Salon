@@ -1,0 +1,11 @@
+body{
+    background-image: url("https://www.fortgarryhotel.com/wp-content/uploads/2018/05/Spa-Banner.jpg");
+
+}
+.well1{
+    box-sizing: border-box;
+    width: 50%;
+    height: 400px;
+    background: white;
+    float: left;
+}

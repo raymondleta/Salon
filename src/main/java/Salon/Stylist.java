@@ -58,6 +58,16 @@ public class Stylist {
                     .executeAndFetch(Client.class);
         }
     }
+    public void update(String name, String phoneNumber) {
+        try(Connection con = DB.sql2o.open()) {
+            String sql = "UPDATE stylists SET name = :name, phoneNumber = :phoneNumber WHERE id = :id";
+            con.createQuery(sql)
+                    .addParameter("name", name)
+                    .addParameter("phoneNumber", phoneNumber)
+                    .addParameter("id", id)
+                    .executeUpdate();
+        }
+    }
 
 
 
