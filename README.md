@@ -36,6 +36,7 @@ Then run 'git clone https://github.com/raymondleta/Salon' on your terminal
 2. Spark Micro-framework
 3. Velocity Template Engine
 4. CSS
+5. SQL
 
 ### Support or questions
 For any questions feel free to contact me through gitongaraymondd@gmail.com
