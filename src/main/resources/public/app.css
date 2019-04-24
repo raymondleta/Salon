@@ -8,4 +8,15 @@ body{
     height: 400px;
     background: white;
     float: left;
+    text-align: center;
+    font-family: 'Aclonica', sans-serif;
+     background: #FDD9EB;
+}
+button{
+    margin-top: 50px;
+    width: 150px;
+    height: 30px;
+    border-radius: 40px;
+
+
 }
